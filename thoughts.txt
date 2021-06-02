@@ -1,0 +1,8 @@
+Thoughts Guilded Rose
+---------------------
+
+- Item wrapper? -> since items[] is final in main class we cant use a stream with a collector, so no advantage over calculator.
+- ItemUpdater <> CalculatorFactory -> this way, we can extract a factory interface and use dependency injection if multiple update strategies arise.
+- updating quality seperate from sellIn -> because of Sulfuras exeption
+- right now: 3 points to update if extra typ added -> possibility to put itemType enum interna lto factory and make getCalculator accept a whole item or an item name.
+- in typescript I would just make the calcualtors anonimous functions and store them in a map directly (not really the Java way)
